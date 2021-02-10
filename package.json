@@ -4,8 +4,7 @@
   "description": "Resturant Page project from The Odin Project's JavaScript curriculum",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
