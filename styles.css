@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 :root {
   --font-color: #eee;
   --font-color-dark: #aaa;
@@ -14,18 +15,68 @@ body {
   overflow-x: hidden;
   margin:  0;
 }
-@keyframes showTab {
-0% {
-    opacity:0;
+header{
+  width: 100%;
+  min-height: 3vh;
+  max-height: 4vh;
+  padding-bottom: 15px;
+  background: var(--cream);
 }
-100% {
-    opacity:1;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  translate: 0px -2.8vh;
 }
+h2{
+  color: mediumpurple;
+  font-size: 5rem;
+}
+.tabs{
+  color: purple;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+li:hover {
+  color: pink;
 }
 #home{
+  font-family: 'Fredoka One', cursive;
+  display: flex;
   height: 100vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
   background: url(./img/burgerFlipHome.jpg) no-repeat center center fixed;
   background-size: cover;
+}
+#home h1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: rgba(66, 5, 5, 0.9);
+  font-size: 6rem;
+  text-shadow: 1px 1px 1px var(--cream);
+}
+#home p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 900;
+  color: rgb(116, 0, 0);
+  font-size: 3rem;
+  text-shadow: 1px 1px 1px var(--cream);
 }
 a{
   color:white;
