@@ -3,19 +3,18 @@
 function loadHome(){
     const content = document.getElementById('content');
 
-    const img = document.createElement('img');
-    const headline = document.createElement('h1');
-    const description = document.createElement('p');
+    const home = document.createElement('div');
+    const headline = document.createElement('p');
+    const description = document.createElement('h1');
+    
+    home.id = 'home';
 
-    img.setAttribute('src', "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/1200px-Cheeseburger.jpg");
-    img.setAttribute('alt', "Cheese Burger");
+    headline.innerText = 'Burgers made with love';
+    description.innerText = 'Create your own amazing Burger from scratch!';
 
-    headline.innerText = 'Made with love';
-    description.innerText = 'This is the most amazing burger place ever made.';
-
-    content.appendChild(img);
-    content.appendChild(headline);
-    content.appendChild(description);
+    home.appendChild(description);
+    home.appendChild(headline);
+    content.appendChild(home);
 }
 
 export {loadHome}

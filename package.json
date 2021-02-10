@@ -1,13 +1,17 @@
 {
-  "name": "restaurantpage",
+  "name": "restaurant-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "Resturant Page project from The Odin Project's JavaScript curriculum",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gravender/restaurantPage"
+  },
+  "author": "gravender",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.21.2",
