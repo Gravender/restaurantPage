@@ -1,6 +1,6 @@
 
 function loadFooter(){
-    const content = document.getElementById('content');
+    const body = document.querySelector('body');
 
     const footer = document.createElement('footer');
     const link = document.createElement('a');
@@ -11,7 +11,7 @@ function loadFooter(){
     link.innerText = 'Gravender';
 
     footer.appendChild(link);
-    content.appendChild(footer);
+    body.appendChild(footer);
 }
 
 export {loadFooter}

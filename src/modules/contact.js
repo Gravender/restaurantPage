@@ -2,19 +2,25 @@
 function loadContact(){
     const content = document.getElementById('content');
 
-    const img = document.createElement('img');
+    const contact = document.createElement('div');
     const headline = document.createElement('h1');
-    const description = document.createElement('p');
+    const address = document.createElement('p');
+    const hours = document.createElement('p');
 
-    img.setAttribute('src', "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/1200px-Cheeseburger.jpg");
-    img.setAttribute('alt', "Cheese Burger");
+    while (content.firstChild) {
+        content.removeChild(content.lastChild);
+    }
 
-    headline.innerText = 'Made with love';
-    description.innerText = 'This is the most amazing burger place ever made.';
+    contact.id = 'contact';
 
-    content.appendChild(img);
-    content.appendChild(headline);
-    content.appendChild(description);
+    headline.innerText = 'Contact us';
+    address.innerText = '2262 Blackwell Street Anchorage, AK 99504 ';
+    hours.innerText = 'Mon-Sun 1am-2am';
+
+    contact.appendChild(headline);
+    contact.appendChild(address);
+    contact.appendChild(hours);
+    content.appendChild(contact);
 }
 
 export {loadContact}
