@@ -96,7 +96,7 @@ li:hover {
   left: 50%;
   top: 50%;
   flex-direction: column;
-  height: 80%;
+  height: 70%;
   width: 700px;
   border-radius: 30px;
 }
@@ -111,7 +111,7 @@ li:hover {
   top: 50%;
   flex-direction: column;
   padding: 30px;
-  height: 80%;
+  height: 70%;
   width: 80rem;
   border-radius: 30px;
 }
