@@ -2,22 +2,7 @@ import { loadHome } from './modules/home'
 import { loadMenu } from './modules/menu'
 import { loadContact } from './modules/contact'
 import { loadFooter } from './modules/footer';
-
-const header =  () => {
-    const body = document.querySelector('body');
-    const head = document.createElement("header");
-    head.innerHTML =`
-    <nav>
-        <h2>Good Burger</h2>
-        <ul class ="tabs">
-            <li data-target = 'Home' class = 'tab active'>Home</li>
-            <li data-target = 'Menu' class = 'tab'>Menu</li>
-            <li data-target = 'Contact' class = 'tab'>Contact</li>
-        </ul>
-    </nav>
-    `;
-    body.appendChild(head);
-};
+import { loadHeader } from './modules/header';
 
 const tabSelector = () =>{
     const tabs = document.querySelectorAll(".tab");
@@ -34,7 +19,7 @@ const tabSelector = () =>{
         });
     });
 };
-header();
+loadHeader();
+loadFooter();
 tabSelector();
 loadHome();
-loadFooter();

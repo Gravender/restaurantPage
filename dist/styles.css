@@ -96,9 +96,65 @@ li:hover {
   left: 50%;
   top: 50%;
   flex-direction: column;
-  height: 1100px;
+  height: 900px;
   width: 700px;
   border-radius: 30px;
+}
+#menu{
+  display: flex;
+  position: fixed;
+  font-family: 'Sans-serif', cursive;
+  background: var(--backgroun-contact);
+  font-size: 10px;
+  translate: -50% -50%;
+  left: 50%;
+  top: 50%;
+  flex-direction: column;
+  padding: 30px;
+  height: 900px;
+  width: 80rem;
+  border-radius: 30px;
+}
+#menu img {
+  width: calc(5rem + 8vw);
+  height: calc(5rem + 8vw);
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 30px;
+  grid-area: img;
+}
+#menu h1 {
+  height: 20px;
+  width: 40rem;
+  font-size: 20px;
+  grid-area: title;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed black;
+}
+#menu h2 {
+  height: 20px;
+  font-size: 20px;
+  color:rgb(116, 0, 0);
+  grid-area: price;
+  padding-bottom: 10px;
+}
+#menu p {
+  height: 90px;
+  font-size: 18px;
+  margin: 0px;
+  padding-left: 10px;
+  top: 0px;
+  grid-area: desc;
+}
+.menuItem{
+  display: grid;
+  grid-template-areas:
+    'img title price'
+    'img desc desc';
+  width: 80%;
+  height: 150px;
+  margin: 20px;
 }
 a{
   color:white;
